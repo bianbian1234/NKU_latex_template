@@ -1,0 +1,101 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.0 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{gb7714-2015/global//global/global}
+    \entry{RN275}{article}{}
+      \name{author}{1}{}{%
+        {{hash=71f0a2289542beca977dd30dd1a9d670}{%
+           family={李妍},
+           familyi={李\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {chinese}%
+      }
+      \strng{namehash}{71f0a2289542beca977dd30dd1a9d670}
+      \strng{fullhash}{71f0a2289542beca977dd30dd1a9d670}
+      \strng{bibnamehash}{71f0a2289542beca977dd30dd1a9d670}
+      \strng{authorbibnamehash}{71f0a2289542beca977dd30dd1a9d670}
+      \strng{authornamehash}{71f0a2289542beca977dd30dd1a9d670}
+      \strng{authorfullhash}{71f0a2289542beca977dd30dd1a9d670}
+      \field{sortinit}{1}
+      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{金融研究}
+      \field{langid}{english}
+      \field{lansortorder}{1}
+      \field{number}{8}
+      \field{title}{宏观审慎监管与金融稳定}
+      \field{type}{Journal Article}
+      \field{usera}{J}
+      \field{userd}{chinese}
+      \field{userf}{chinese}
+      \field{year}{2009}
+      \field{dateera}{ce}
+      \field{pages}{52\bibrangedash 60}
+      \range{pages}{9}
+      \keyw{RN275}
+    \endentry
+    \entry{RN1327}{article}{}
+      \name{author}{1}{}{%
+        {{hash=fabf7ba2932366aac6a1a75420251302}{%
+           family={Abdymomunov},
+           familyi={A\bibinitperiod},
+           given={Azamat},
+           giveni={A\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \strng{namehash}{fabf7ba2932366aac6a1a75420251302}
+      \strng{fullhash}{fabf7ba2932366aac6a1a75420251302}
+      \strng{bibnamehash}{fabf7ba2932366aac6a1a75420251302}
+      \strng{authorbibnamehash}{fabf7ba2932366aac6a1a75420251302}
+      \strng{authornamehash}{fabf7ba2932366aac6a1a75420251302}
+      \strng{authorfullhash}{fabf7ba2932366aac6a1a75420251302}
+      \field{sortinit}{4}
+      \field{sortinithash}{11cdaee3b18e01d77f3f428b13c1fc76}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{1614-2446}
+      \field{journaltitle}{Annals of Finance}
+      \field{langid}{english}
+      \field{lansortorder}{4}
+      \field{number}{3}
+      \field{title}{Regime-switching measure of systemic financial stress}
+      \field{type}{Journal Article}
+      \field{usera}{J}
+      \field{userd}{english}
+      \field{userf}{english}
+      \field{volume}{9}
+      \field{year}{2013}
+      \field{dateera}{ce}
+      \field{pages}{455\bibrangedash 470}
+      \range{pages}{16}
+      \keyw{RN1327}
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+
