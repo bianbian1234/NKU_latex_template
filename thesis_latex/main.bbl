@@ -1,0 +1,107 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.0 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{gb7714-2015/global//global/global}
+    \entry{RN35}{article}{}
+      \name{author}{3}{}{%
+        {{hash=acdef09667fb46c72e108f099c6b15a8}{%
+           family={马君潞},
+           familyi={马\bibinitperiod}}}%
+        {{hash=fa1552655d1f510f13528eeac6eb9220}{%
+           family={范小云},
+           familyi={范\bibinitperiod}}}%
+        {{hash=06a24e476560ec887dc7331eb5a81d35}{%
+           family={曹元涛},
+           familyi={曹\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {chinese}%
+      }
+      \strng{namehash}{daa6186d55829163d9b197c3ca5c9e32}
+      \strng{fullhash}{20a68a063e5146510cfaf6c082531722}
+      \strng{bibnamehash}{20a68a063e5146510cfaf6c082531722}
+      \strng{authorbibnamehash}{20a68a063e5146510cfaf6c082531722}
+      \strng{authornamehash}{daa6186d55829163d9b197c3ca5c9e32}
+      \strng{authorfullhash}{20a68a063e5146510cfaf6c082531722}
+      \field{sortinit}{1}
+      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{经济研究}
+      \field{langid}{english}
+      \field{lansortorder}{1}
+      \field{number}{1}
+      \field{title}{中国银行间市场双边传染的风险估测及其系统性特征分析}
+      \field{type}{Journal Article}
+      \field{usera}{J}
+      \field{userd}{chinese}
+      \field{userf}{chinese}
+      \field{year}{2007}
+      \field{dateera}{ce}
+      \field{pages}{68\bibrangedash 78}
+      \range{pages}{11}
+      \keyw{RN35}
+    \endentry
+    \entry{RN1327}{article}{}
+      \name{author}{1}{}{%
+        {{hash=fabf7ba2932366aac6a1a75420251302}{%
+           family={Abdymomunov},
+           familyi={A\bibinitperiod},
+           given={Azamat},
+           giveni={A\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \strng{namehash}{fabf7ba2932366aac6a1a75420251302}
+      \strng{fullhash}{fabf7ba2932366aac6a1a75420251302}
+      \strng{bibnamehash}{fabf7ba2932366aac6a1a75420251302}
+      \strng{authorbibnamehash}{fabf7ba2932366aac6a1a75420251302}
+      \strng{authornamehash}{fabf7ba2932366aac6a1a75420251302}
+      \strng{authorfullhash}{fabf7ba2932366aac6a1a75420251302}
+      \field{sortinit}{4}
+      \field{sortinithash}{11cdaee3b18e01d77f3f428b13c1fc76}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{1614-2446}
+      \field{journaltitle}{Annals of Finance}
+      \field{langid}{english}
+      \field{lansortorder}{4}
+      \field{number}{3}
+      \field{title}{Regime-switching measure of systemic financial stress}
+      \field{type}{Journal Article}
+      \field{usera}{J}
+      \field{userd}{english}
+      \field{userf}{english}
+      \field{volume}{9}
+      \field{year}{2013}
+      \field{dateera}{ce}
+      \field{pages}{455\bibrangedash 470}
+      \range{pages}{16}
+      \keyw{RN1327}
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+

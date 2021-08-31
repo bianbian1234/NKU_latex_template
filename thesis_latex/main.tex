@@ -35,8 +35,9 @@
  \usepackage[figuresright]{rotating} %表格横置
  \usepackage{lscape} %页面横置（插入技术路线流程图用）
 % \usepackage{geometry} %注意 不要打开 会引起前两页排版混乱
+ \usepackage{pifont} %输入带圈字符
 
-
+ \usepackage[bottom]{footmisc} % 脚注强行固定到页脚
 
 
 \usepackage{listings}% 附录中加入代码用
@@ -54,6 +55,34 @@
 % \usepackage{mathptmx}
 
 % --------------------------------------------------
+% % 对于换页导致的标题距离页眉过近，使用下面的方法处理
+% \clearpage
+% \ \ \vspace{-7mm}
+% \section{研究背景和意义}\label{节：研究背景和意义}
+% 或\subsection{研究背景和意义}\label{节：研究背景和意义}
+% 或\subsubsection{研究背景和意义}\label{节：研究背景和意义}
+
+% --------------------------------------------------
+% 连续标题空行调整如下： 
+
+% \vspace{\gapcheptersection}
+
+%   \section{研究背景和意义}\label{节：研究背景和意义}
+
+%   \vspace{\gapsectionsub}
+
+%     \subsection{研究背景和研究目标}\label{小节：研究背景和研究目标} 
+
+%     \vspace{\gapsubsectionsubsub}
+
+%       \subsubsection{研究背景}
+
+
+% --------------------------------------------------
+
+
+%  加粗字体可用  {\jiacu 文字内容} 
+% --------------------------------------------------
 
 \usepackage[T1]{fontenc}   % 设置公式和正文英文字体为times - 当前方案
 \usepackage{newtxtext, newtxmath} % 如果字体出现问题将这一行和前面一行打开
@@ -66,7 +95,7 @@
 
 \raggedbottom % 修正由于自动分页导致的段落间距拉长
 
-
+\hypersetup{hidelinks} % 隐藏超链接方框
 
 % \usepackage{etoolbox}
 % \BeforeBeginEnvironment{tabular}{\zihaowu} %修改表格内字体为五号

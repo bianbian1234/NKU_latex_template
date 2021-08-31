@@ -25,9 +25,9 @@
 \RequirePackage[backend = biber, maxcitenames=2,mincitenames=1,uniquename=false,uniquelist =false,defernumbers=true,citestyle=gb7714-2015ay,bibstyle= gb7714-2015,gbnamefmt=lowercase,doi=false,sorting=gb7714-2015,gblanorder=chineseahead,sortlocale=zh__pinyin, isbn=false]{biblatex}
 
 % 调整文后参考文献列表中的字号以及项目间距 学校要求行距16pt
-\setlength{\bibitemsep}{2pt}
-\setlength{\bibnamesep}{2pt}
-\setlength{\bibinitsep}{2pt}
+\setlength{\bibitemsep}{0pt}
+\setlength{\bibnamesep}{1pt}
+\setlength{\bibinitsep}{3pt}
 \renewcommand{\bibfont}{\zihaowu}%
 
 %uniquename=false 处理某些三个人长名称出错问题
@@ -609,6 +609,8 @@
 \newcount\NKT@itemcnt
 \NKT@itemcnt=0
 
+% 页面设置
+
 \def\standardpageset{
   \paperwidth 210mm
   \paperheight 297mm
@@ -618,11 +620,30 @@
   \advance\oddsidemargin -1in
   \evensidemargin \oddsidemargin
   \topmargin 38mm
-  \advance \topmargin -1in
+  \advance \topmargin -24mm
+  % \advance \topmargin -1in
+  % \setlength{\headheight}{0mm}
+   \setlength{\headsep}{6mm} % 后加的
+   \setlength{\footskip}{5mm}% 后加的
   \advance \topmargin -\headsep
   \advance \topmargin -\headheight
   \relax}
 \standardpageset
+
+% \def\standardpageset{
+%   \paperwidth 210mm
+%   \paperheight 297mm
+%   \textheight 220mm
+%   \textwidth 146mm
+%   \oddsidemargin 32mm
+%   \advance\oddsidemargin -1in
+%   \evensidemargin \oddsidemargin
+%   \topmargin 38mm
+%   \advance \topmargin -1in
+%   \advance \topmargin -\headsep
+%   \advance \topmargin -\headheight
+%   \relax}
+% \standardpageset
 
 % 此处设置章节前后行距！！！！！！！！！！！！！！！！！！！！！！！！！！！！！
 \def\overchapterspace{10pt}
@@ -641,14 +662,27 @@
 
 % 下面定义目录中格式！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！
 \tocdepth{3}
-\def\tocpartfonts{\zihaosi}
-\def\tocchapterfonts{\zihaosi\selectfont}
-\def\tocsectionfonts{\zihaoxiaosi\selectfont}
-\def\tocsubsectionfonts{\zihaowu\selectfont}
+
+% 这是比较松散的 目录外观
+
+\def\tocchapterfonts{\zihaosi\selectfont \baselineskip 11.1mm}
+\def\tocsectionfonts{\zihaoxiaosi\selectfont \baselineskip 5.6mm}
+\def\tocsubsectionfonts{\zihaowu\selectfont \baselineskip 5.4mm}
+
+%  这是比较紧凑的 目录外观
+
+% \def\tocpartfonts{\zihaosi}
+% \def\tocchapterfonts{\zihaosi\selectfont}
+% \def\tocsectionfonts{\zihaoxiaosi\selectfont}
+% \def\tocsubsectionfonts{\zihaowu\selectfont}
+
+% 原始设置
+
 % \def\tocpartfonts{\rmfamily\zihaosi}
 % \def\tocchapterfonts{\rmfamily\zihaosi}
 % \def\tocsectionfonts{\rmfamily\zihaoxiaosi}
 % \def\tocsubsectionfonts{\rmfamily\zihaowu}
+
 \def\tocleaders{$\cdot\!\cdot\!\cdot\ $}
 \def\tocchapterindent{0em}
 \def\tocsectionindent{0.5em}
@@ -660,12 +694,17 @@
 \def\toctitlesep{1em} %控制 第一章 和标题之间的间距 \def\toctitlesep{12pt}  四号14 小四12 五号10.5
 \def\NKT@toc@over@part{12pt}
 \def\NKT@toc@below@part{6pt}
-\def\NKT@toc@over@chapter{6pt}
-\def\NKT@toc@below@chapter{0pt}
+
+% 下面是松散的目录外观
+
+\def\NKT@toc@over@chapter{0pt}
+\def\NKT@toc@below@chapter{6pt}
 \def\NKT@toc@over@section{6pt}
 \def\NKT@toc@below@section{0pt}
 \def\NKT@toc@over@subsection{6pt}
 \def\NKT@toc@below@subsection{0pt}
+
+% 下面是紧凑的目录外观
 
 % \def\NKT@toc@over@chapter{6pt}
 % \def\NKT@toc@below@chapter{0pt}
@@ -673,6 +712,15 @@
 % \def\NKT@toc@below@section{0pt}
 % \def\NKT@toc@over@subsection{6pt}
 % \def\NKT@toc@below@subsection{0pt}
+
+
+
+% \def\NKT@toc@over@chapter{7.3mm}
+% \def\NKT@toc@below@chapter{0mm}
+% \def\NKT@toc@over@section{2.5mm} 
+% \def\NKT@toc@below@section{-2.8mm}
+% \def\NKT@toc@over@subsection{3.3mm}
+% \def\NKT@toc@below@subsection{-2.3mm}
 
 \def\NK@captionsep{1em}
 
@@ -749,17 +797,21 @@
   \NKT@jibenxinxi}%
 
 \endlinechar `\^^M
+% -----------------------------------------------------------
+% 修改封面页、授权书、原创声明三页纸背面的空白页（带空白页）
 
 \def\NKT@jibenxinxi#1{%
   \bgroup
     \setkeys{NKT}{#1}%
     \NKT@restoreCJK
     \pagestyle{empty}
-    \@twosidefalse
-    \NKTtitlepage
-    \NKTauthorization
-    \NKTdeclaration
-    \clearpage
+     % \@twosidefalse
+     \NKTtitlepage
+     \cleardoublepage
+     \NKTauthorization
+     \cleardoublepage
+     \NKTdeclaration
+     \cleardoublepage
     \ifx\NKT@key@lunwenleibie\NKT@string@boshi
       \global\@twosidetrue
       \global\@mparswitchtrue
@@ -770,6 +822,31 @@
   \egroup
   \setcounter{page}{1}
   \pagestyle{centerheadings}}
+
+  % -----------------------------------------------------------
+% % 修改封面页、授权书、原创声明三页纸背面的空白页（不带空白页）
+
+% \def\NKT@jibenxinxi#1{%
+% \bgroup
+%   \setkeys{NKT}{#1}%
+%   \NKT@restoreCJK
+%   \pagestyle{empty}
+%   \@twosidefalse
+%   \NKTtitlepage
+%   \NKTauthorization
+%   \NKTdeclaration
+%   \clearpage
+%   \ifx\NKT@key@lunwenleibie\NKT@string@boshi
+%     \global\@twosidetrue
+%     \global\@mparswitchtrue
+%   \else
+%     \global\@twosidefalse
+%     \global\@mparswitchfalse
+%   \fi
+% \egroup
+% \setcounter{page}{1}
+% \pagestyle{centerheadings}}
+% % -----------------------------------------------------------
 
 \def\NKT@keyvalue#1{%
   \edef\NKT@temp{\csname NKT@key@#1\endcsname}%
