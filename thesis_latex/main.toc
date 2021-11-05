@@ -1,59 +1,15 @@
 \boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {摘要}{}}{I}{Doc-Start}% 
+\contentsline {chapter}{\numberline {摘要}{}}{I}{Doc-Start}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {Abstract}{}}{II}{Doc-Start}% 
+\contentsline {chapter}{\numberline {Abstract}{}}{II}{Doc-Start}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {图目录}{}}{V}{Doc-Start}% 
+\contentsline {chapter}{\numberline {图目录}{}}{V}{Doc-Start}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {表目录}{}}{VII}{Doc-Start}% 
+\contentsline {chapter}{\numberline {表目录}{}}{VII}{Doc-Start}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {第\CJKnumber {1}章}绪论}{1}{chapter.1}% 
+\contentsline {chapter}{\numberline {第\CJKnumber {1}章}文献综述}{1}{chapter.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {第\CJKnumber {1}节}研究背景和意义}{1}{section.1.1}% 
+\contentsline {chapter}{\numberline {致谢}{}}{3}{chapter.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {1.1.1}研究背景和研究目标}{1}{subsection.1.1.1}% 
-\defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {1.1.1.1}研究背景}{1}{subsubsection.1.1.1.1}% 
-\defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {第\CJKnumber {2}节}研究背景和意义}{2}{section.1.2}% 
-\defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {1.2.1}研究背景和意义}{3}{subsection.1.2.1}% 
-\defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {1.2.1.1}研究背景和意义}{4}{subsubsection.1.2.1.1}% 
-\defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {第\CJKnumber {2}章}文献综述}{5}{chapter.2}% 
-\defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {第\CJKnumber {1}节}第一节内容}{5}{section.2.1}% 
-\defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {第\CJKnumber {2}节}第二节内容}{5}{section.2.2}% 
-\defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.2.1}第一小节内容}{5}{subsection.2.2.1}% 
-\defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.2.2}第二小节内容}{5}{subsection.2.2.2}% 
-\defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {第\CJKnumber {3}章}模型方案}{7}{chapter.3}% 
-\defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {第\CJKnumber {1}节}第一节}{7}{section.3.1}% 
-\defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.1.1}第一小节}{7}{subsection.3.1.1}% 
-\defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {第\CJKnumber {2}节}第二节}{7}{section.3.2}% 
-\defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {第\CJKnumber {4}章}实证研究}{9}{chapter.4}% 
-\defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {第\CJKnumber {1}节}第一节内容}{9}{section.4.1}% 
-\defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {第\CJKnumber {5}章}结论}{11}{chapter.5}% 
-\defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {第\CJKnumber {1}节}总结}{11}{section.5.1}% 
-\defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {附录A\ \ 附录A标题}{}}{13}{section.5.1}% 
-\defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {附录B\ \ 程序代码}{}}{15}{section.5.1}% 
-\defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {参考文献}{}}{17}{lstnumber.-1.3}% 
-\defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {致谢}{}}{19}{lstnumber.-1.3}% 
-\defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {个人简历}{}}{21}{lstnumber.-1.3}% 
+\contentsline {chapter}{\numberline {个人简历}{}}{5}{chapter.1}%
