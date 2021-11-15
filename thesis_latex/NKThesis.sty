@@ -22,7 +22,41 @@
 
 % \RequirePackage[backend = biber, maxcitenames=2,mincitenames=1,citestyle=gb7714-2015ay,bibstyle= gb7714-2015, defernumbers=true,gbnamefmt=lowercase,doi=false,sorting=gb7714-2015,gblanorder=chineseahead,sortlocale=zh__pinyin, isbn=false,uniquename=false,citestyle=authoryear,natbib=true]{biblatex}
 
-\RequirePackage[backend = biber, maxcitenames=2,mincitenames=1,uniquename=false,uniquelist =false,defernumbers=true,citestyle=gb7714-2015ay,bibstyle= gb7714-2015,gbnamefmt=lowercase,doi=false,sorting=gb7714-2015,gblanorder=chineseahead,sortlocale=zh__pinyin, isbn=false]{biblatex}
+
+% 20210912前 - 文后参考文献人名是小写的
+% \RequirePackage[backend = biber, maxcitenames=2,mincitenames=1,uniquename=false,uniquelist =false,defernumbers=true,citestyle=gb7714-2015ay,bibstyle= gb7714-2015,gbnamefmt=lowercase,doi=false,sorting=gb7714-2015,gblanorder=chineseahead,sortlocale=zh__pinyin, isbn=false]{biblatex} 
+
+\RequirePackage[
+backend = biber, 
+maxcitenames=2,
+mincitenames=1,
+uniquename=false,
+uniquelist =false,
+defernumbers=true,
+gbcitelocal = gb7714-2015, % 两个作者，中文使用“等”“和”，而英文使用“et al.”“and”。 gbcitelocal = gb7714-2015
+gbfieldtype=true, % true - 输出‘博士学位论文’
+gbpub=true, % false- 隐藏出版地和出版年份[s.l],
+citestyle=gb7714-2015ay,bibstyle= gb7714-2015,
+doi=false,isbn=false,
+sorting=gb7714-2015,gblanorder=chineseahead,sortlocale=zh__pinyin,
+]{biblatex}
+
+% 注意：修改两个多个参考文献作者中间的连接字符如“和”，“end”在bbx文件中搜索\DefineBibliographyStrings{english}
+\DefineBibliographyStrings{english}{
+andincite = {and},
+andincitecn = {和},
+andothersincite={et al\adddot},
+% andothersincite = {等{\adddot}},%adddot才能避开标点追踪
+andothersincitecn = {等}, }
+
+
+% gbfieldtype=true - 输出‘博士学位论文’,gbpub=false - 隐藏出版地和出版年份[s.l],
+\DefineBibliographyStrings{english}{phdthesiscn={博士学位论文}}
+\DefineBibliographyStrings{english}{mathesis={Master Thesis}}
+\DefineBibliographyStrings{english}{mathesiscn={硕士学位论文}}
+\DefineBibliographyStrings{english}{phdthesis={PhD Thesis}}
+\DefineBibliographyStrings{english}{phdthesiscn={博士学位论文}}
+% 注意-phdthesis的文献bib中，不需要输出type项目
 
 % 调整文后参考文献列表中的字号以及项目间距 学校要求行距16pt
 \setlength{\bibitemsep}{0pt}
