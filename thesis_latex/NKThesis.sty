@@ -166,6 +166,8 @@ andothersincitecn = {等}, }
   \input{zhwinfonts.tex}
 \fi
 
+% 下面是修改章节编号用的 - 下面是文科类的一、（一）、1形式编号
+
 \if@NKT@English
   \def\chaptername{Chapter \arabic{chapter}}
   \def\thesection{\arabic{chapter}.\arabic{section}}
@@ -179,7 +181,11 @@ andothersincitecn = {等}, }
 \else
   \def\chaptername{第\CJKnumber{\arabic{chapter}}章}
   \def\thesection{第\CJKnumber{\arabic{section}}节}
-  \def\thesubsection{\arabic{chapter}.\arabic{section}.\arabic{subsection}}
+  % \def\thesubsection{\arabic{chapter}.\arabic{section}.\arabic{subsection}}
+  % \def\thesubsection{\CJKnumber{\arabic{subsection}}{、}}
+  % \def\thesubsubsection{{（}\CJKnumber{\arabic{subsubsection}}{）}}
+  \def\thesubsection{{\hskip 2em}\CJKnumber{\arabic{subsection}}{、}{\hskip -1em}}
+  \def\thesubsubsection{{\hskip 2em}{（}\CJKnumber{\arabic{subsubsection}}{）}{\hskip -1em}}
   \def\contentsname{目录}
   \def\appendixnamenonumber{附录}
   \def\nkrefname{参考文献}
@@ -193,6 +199,36 @@ andothersincitecn = {等}, }
   \newtheorem{Definition}[Theorem]{\hskip 2em 定义}
   \newtheorem{Example}[Theorem]{\hskip 2em 例}
 \fi
+
+
+% 下面是修改章节编号用的 - 下面是原始的 1.2.1.1形式编号
+% \if@NKT@English
+%   \def\chaptername{Chapter \arabic{chapter}}
+%   \def\thesection{\arabic{chapter}.\arabic{section}}
+%   \def\thesubsection{\arabic{chapter}.\arabic{section}.\arabic{subsection}}
+%   \def\contentsname{CONTENTS}
+%   \def\appendixnamenonumber{Appendix}
+%   \def\nkrefname{References}
+%   \def\tablename{Table}
+%   \def\figurename{Figure}
+%   \def\NKT@proof{Proof}
+% \else
+%   \def\chaptername{第\CJKnumber{\arabic{chapter}}章}
+%   \def\thesection{第\CJKnumber{\arabic{section}}节}
+%   \def\thesubsection{\arabic{chapter}.\arabic{section}.\arabic{subsection}}
+%   \def\contentsname{目录}
+%   \def\appendixnamenonumber{附录}
+%   \def\nkrefname{参考文献}
+%   \def\tablename{表}
+%   \def\figurename{图}
+%   \def\NKT@proof{证明}
+%   \newtheorem{Theorem}{\hskip 2em 定理}[chapter]
+%   \newtheorem{Lemma}[Theorem]{\hskip 2em 引理}
+%   \newtheorem{Corollary}[Theorem]{\hskip 2em 推论}
+%   \newtheorem{Proposition}[Theorem]{\hskip 2em 命题}
+%   \newtheorem{Definition}[Theorem]{\hskip 2em 定义}
+%   \newtheorem{Example}[Theorem]{\hskip 2em 例}
+% \fi
 
 
 % \RequirePackage{mathptmx}% 为将公式字体改为times，将此行删掉
@@ -263,13 +299,16 @@ andothersincitecn = {等}, }
   % \@startsection{section}{1}{\z@}{31pt}{12pt}{\sectionformat}}当前使用
 
 \def\subsection{
-  \@startsection{subsection}{2}{\z@}{21pt}{15pt}{\subsectionformat}}
+  % \@startsection{subsection}{2}{2em}{21pt}{15pt}{\subsectionformat}}
+  \@startsection{subsection}{2}{\z@}{21pt}{15pt}{\subsectionformat}} % 当前版本
   % \@startsection{subsection}{2}{\z@}{12pt}{6pt}{\subsectionformat}}
 
 \def\subsubsection{
-  \@startsection{subsubsection}{3}{\z@}{15pt}{6pt}{\subsubsectionformat}}
+  % \@startsection{subsubsection}{3}{2em}{15pt}{6pt}{\subsubsectionformat}}
+  \@startsection{subsubsection}{3}{\z@}{15pt}{6pt}{\subsubsectionformat}} % 当前版本
   % \@startsection{subsubsection}{3}{\z@}{12pt}{6pt}{\subsubsectionformat}}
 
+% 下面是一、（一）格式
 \def\sectionspecial{\jiacu}
 \def\partformat{\centering\huge\bfseries}
 \def\chapterformat{\centering\fontsize{16}{19}\bfseries\jiacu}
@@ -278,6 +317,17 @@ andothersincitecn = {等}, }
 \def\subsectionformat{\bfseries\fontsize{13}{15}\selectfont}
 \def\subsubsectionformat{\fontsize{12}{14}\bfseries}
 % \def\subsubsectionformat{\bfseries\zihaowu}
+
+
+% 下面是1.1.1.1格式
+% \def\sectionspecial{\jiacu}
+% \def\partformat{\centering\huge\bfseries}
+% \def\chapterformat{\centering\fontsize{16}{19}\bfseries\jiacu}
+% \def\sectionformat{\centering\fontsize{14}{17}\bfseries\jiacu}  
+% % \def\sectionformat{\centering\bfseries\zihaosi} 
+% \def\subsectionformat{\bfseries\fontsize{13}{15}\selectfont}
+% \def\subsubsectionformat{\fontsize{12}{14}\bfseries}
+% % \def\subsubsectionformat{\bfseries\zihaowu}
 
 %  此处定义没有正文状态下，章节标题之间的空隙（有的是加空隙有的是减空隙）！！！！！！！！
 \def\gapcheptersection{-17pt}
@@ -720,7 +770,9 @@ andothersincitecn = {等}, }
 \def\tocleaders{$\cdot\!\cdot\!\cdot\ $}
 \def\tocchapterindent{0em}
 \def\tocsectionindent{0.5em}
-\def\tocsubsectionindent{-1.5em}
+\def\tocsubsectionindent{-2.5em}  % 中文编号格式的标题 - 打开此项
+% \def\tocsubsectionindent{-1.5em} % 1.1.1.1格式的标题 - 打开此项
+
 
 % \def\tocchapterindent{0em}
 % \def\tocsectionindent{1em}
