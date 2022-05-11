@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021/W32TeX) (preloaded format=xelatex 2021.10.25)  4 NOV 2021 18:50
+This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021/W32TeX) (preloaded format=xelatex 2021.10.25)  10 MAY 2022 14:47
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -662,7 +662,7 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 28
 \Hy@SectionHShift=\skip82
 )
 \c@Theorem=\count427
-LaTeX Font Info:    Redeclaring math alphabet \mathcal on input line 189.
+LaTeX Font Info:    Redeclaring math alphabet \mathcal on input line 235.
 \NKTtemp@dim@a=\dimen177
 \npnumwidth=\dimen178
 \tocchaptertitlewidth=\dimen179
@@ -1788,10 +1788,10 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 39876 strings out of 476919
- 810117 string characters out of 5825423
- 1693009 words of memory out of 5000000
- 59081 multiletter control sequences out of 15000+600000
+ 39877 strings out of 476919
+ 810143 string characters out of 5825423
+ 1693203 words of memory out of 5000000
+ 59082 multiletter control sequences out of 15000+600000
  543741 words of font info for 311 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  102i,15n,103p,1125b,842s stack positions out of 5000i,500n,10000p,200000b,80000s
